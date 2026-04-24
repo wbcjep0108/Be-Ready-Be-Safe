@@ -3,33 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ready Safe</title>
+    <title>Ready Safe - Disaster Preparedness Hub</title>
     <link rel="stylesheet" href="index.css">
-    
-    
 </head>
+
 <body>
-
+    <!-- ============================================
+         HEADER & FIXED NAVIGATION
+         ============================================ -->
     <header class="header">
-  <nav class="nav">
-    <img src="Assets/logo.png" alt="Logo" class="logo">
-    <a href="#" class="home">HOME</a>
-    <a href="#" class="earthquake">EARTHQUAKE</a>
-    <a href="#" class="typhoon">TYPHOON</a>
-    <a href="#" class="flood">FLOOD</a>
-    <a href="#" class="fire">FIRE</a>
-    <a href="#" class="emergency">EMERGENCY</a>
-  </nav>
-</header>
+        <nav class="nav">
+            <!-- Logo -->
+            <img src="Assets/logo.png" alt="Ready Safe Logo" class="logo">
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link home" data-section="home">HOME</a></li>
+                <li><a href="#earthquake" class="nav-link earthquake" data-section="earthquake">EARTHQUAKE</a></li>
+                <li><a href="#typhoon" class="nav-link typhoon" data-section="typhoon">TYPHOON</a></li>
+                <li><a href="#flood" class="nav-link flood" data-section="flood">FLOOD</a></li>
+                <li><a href="#fire" class="nav-link fire" data-section="fire">FIRE</a></li>
+                <li><a href="#emergency" class="nav-link emergency" data-section="emergency">EMERGENCY</a></li>
+            </ul>
+            
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-  
-  <img src="Assets/hero.png" alt="hero" class="hero">
-  <img src="Assets/people.png" alt="People" class="people">
-  <img src="Assets/clouds.png" alt="Clouds" class="clouds">
-  <img src="Assets/cloud.png" alt="Cloud" class="cloud">
-  <img src="Assets/alert.png" alt="Alert" class="alert">
-  <img src="Assets/map.png" alt="Map" class="map">
-  <img src="Assets/bag.png" alt="Bag" class="bag">
+    <main>
+        <!-- ============================================
+             HERO SECTION - HOME
+             ============================================ -->
+        <section id="home" class="section hero-section">
+            <!-- Background & Decorative Elements -->
+            <img src="Assets/hero.png" class="hero scroll-fade-in" alt="Hero illustration">
+            <img src="Assets/people.png" class="people scroll-fade-in" alt="People preparing">
+            <img src="Assets/clouds.png" class="clouds" alt="Decorative clouds">
+            <img src="Assets/cloud.png" class="cloud" alt="Decorative cloud">
+            
+           
+        </section>
 
+        <!-- ============================================
+             EARTHQUAKE SECTION
+             ============================================ -->
+        <section id="earthquake" class="section content-section">
+            <!-- Section Header -->
+            <div class="section-container">
+                <div class="section-header scroll-slide-up">
+                    <h2>🌏 Earthquake</h2>
+                    <div class="accent-bar"></div>
+                </div>
+                
+                <!-- Before/During/After Cards Grid -->
+                <div class="content-grid">
+                    <!-- BEFORE Card -->
+                    <div class="card scroll-slide-up" style="animation-delay: 0.1s">
+                        <h3 class="phase-before">🟢 Before</h3>
+                        <ul>
+                            <li>Secure heavy furniture (cabinets, shelves)</li>
+                            <li>Prepare emergency kit (water, flashlight, first aid)</li>
+                            <li>Identify safe spots (under table, away from windows)</li>
+                            <li>Practice "Drop, Cover, Hold"</li>
+                        </ul>
+                    </div>
+
+                    <!-- DURING Card -->
+                    <div class="card scroll-slide-up" style="animation-delay: 0.2s">
+                        <h3 class="phase-during">🔴 During</h3>
+                        <ul>
+                            <li><strong>DROP, COVER, HOLD ON</strong></li>
+                            <li>Stay away from glass and falling objects</li>
+                            <li>Do NOT run outside while shaking</li>
+                            <li>If outside → move to open area</li>
+                        </ul>
+                    </div>
+
+                    <!-- AFTER Card -->
+                    <div class="card scroll-slide-up" style="animation-delay: 0.3s">
+                        <h3 class="phase-after">🔵 After</h3>
+                        <ul>
+                            <li>Check yourself and others for injuries</li>
+                            <li>Expect aftershocks</li>
+                            <li>Avoid damaged buildings</li>
+                            <li>Listen to official updates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             TYPHOON SECTION
+             ============================================ -->
+        <section id="typhoon" class="section content-section">
+            <div class="section-container">
+                <div class="section-header scroll-slide-up">
+                    <h2>🌪️ Typhoon</h2>
+                    <div class="accent-bar"></div>
+                </div>
+                
+                <div class="content-grid">
+                    <div class="card scroll-slide-up" style="animation-delay: 0.1s">
+                        <h3 class="phase-before">🟢 Before</h3>
+                        <ul>
+                            <li>Monitor weather updates</li>
+                            <li>Secure roof, windows, and loose items</li>
+                            <li>Prepare food, water, and power banks</li>
+                            <li>Know evacuation routes</li>
+                        </ul>
+                    </div>
+
+                    <div class="card scroll-slide-up" style="animation-delay: 0.2s">
+                        <h3 class="phase-during">🔴 During</h3>
+                        <ul>
+                            <li>Stay indoors and away from windows</li>
+                            <li>Turn off electricity if flooding risk</li>
+                            <li>Do not go outside</li>
+                            <li>Keep emergency kit nearby</li>
+                        </ul>
+                    </div>
+
+                    <div class="card scroll-slide-up" style="animation-delay: 0.3s">
+                        <h3 class="phase-after">🔵 After</h3>
+                        <ul>
+                            <li>Avoid flooded areas</li>
+                            <li>Check for damages and hazards</li>
+                            <li>Boil water before drinking</li>
+                            <li>Follow government advisories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             FLOOD SECTION
+             ============================================ -->
+        <section id="flood" class="section content-section">
+            <div class="section-container">
+                <div class="section-header scroll-slide-up">
+                    <h2>🌊 Flood</h2>
+                    <div class="accent-bar"></div>
+                </div>
+                
+                <div class="content-grid">
+                    <div class="card scroll-slide-up" style="animation-delay: 0.1s">
+                        <h3 class="phase-before">🟢 Before</h3>
+                        <ul>
+                            <li>Elevate important items</li>
+                            <li>Prepare emergency supplies</li>
+                            <li>Know safe evacuation areas</li>
+                            <li>Clear drainage around home</li>
+                        </ul>
+                    </div>
+
+                    <div class="card scroll-slide-up" style="animation-delay: 0.2s">
+                        <h3 class="phase-during">🔴 During</h3>
+                        <ul>
+                            <li>Move to higher ground immediately</li>
+                            <li>Do NOT walk or drive through floodwater</li>
+                            <li>Turn off electricity</li>
+                            <li>Stay informed</li>
+                        </ul>
+                    </div>
+
+                    <div class="card scroll-slide-up" style="animation-delay: 0.3s">
+                        <h3 class="phase-after">🔵 After</h3>
+                        <ul>
+                            <li>Avoid contaminated water</li>
+                            <li>Clean and disinfect your home</li>
+                            <li>Watch for diseases</li>
+                            <li>Follow safety advisories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             FIRE SECTION
+             ============================================ -->
+        <section id="fire" class="section content-section">
+            <div class="section-container">
+                <div class="section-header scroll-slide-up">
+                    <h2>🔥 Fire</h2>
+                    <div class="accent-bar"></div>
+                </div>
+                
+                <div class="content-grid">
+                    <div class="card scroll-slide-up" style="animation-delay: 0.1s">
+                        <h3 class="phase-before">🟢 Before</h3>
+                        <ul>
+                            <li>Install smoke alarms</li>
+                            <li>Prepare fire extinguisher</li>
+                            <li>Plan escape routes</li>
+                            <li>Avoid overloading electrical outlets</li>
+                        </ul>
+                    </div>
+
+                    <div class="card scroll-slide-up" style="animation-delay: 0.2s">
+                        <h3 class="phase-during">🔴 During</h3>
+                        <ul>
+                            <li>Stay low to avoid smoke</li>
+                            <li>Use stairs, NOT elevators</li>
+                            <li>Call emergency services</li>
+                            <li>Get out immediately</li>
+                        </ul>
+                    </div>
+
+                    <div class="card scroll-slide-up" style="animation-delay: 0.3s">
+                        <h3 class="phase-after">🔵 After</h3>
+                        <ul>
+                            <li>Do not re-enter until safe</li>
+                            <li>Check for injuries</li>
+                            <li>Report damages</li>
+                            <li>Seek assistance if needed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             EMERGENCY CONTACTS SECTION
+             ============================================ -->
+        <section id="emergency" class="section content-section">
+            <div class="section-container">
+                <div class="section-header scroll-slide-up">
+                    <h2>🚨 Emergency</h2>
+                    <div class="accent-bar"></div>
+                </div>
+                
+                <!-- Emergency Info Grid -->
+                <div class="emergency-grid">
+                    <!-- Important Contacts Card -->
+                    <div class="emergency-card scroll-slide-up" style="animation-delay: 0.1s">
+                        <h3>📞 Important Contacts</h3>
+                        <ul>
+                            <li><strong>Police:</strong> 911</li>
+                            <li><strong>Fire Department:</strong> 911</li>
+                            <li><strong>Ambulance:</strong> 911</li>
+                            <li><strong>Local Disaster Office:</strong> Check local listings</li>
+                        </ul>
+                    </div>
+
+                    <!-- Emergency Kit Card -->
+                    <div class="emergency-card scroll-slide-up" style="animation-delay: 0.2s">
+                        <h3>🎒 Emergency Kit</h3>
+                        <ul>
+                            <li>Water and food (3 days supply)</li>
+                            <li>Flashlight and batteries</li>
+                            <li>First aid kit</li>
+                            <li>Whistle and phone charger</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
