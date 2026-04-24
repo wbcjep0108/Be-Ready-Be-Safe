@@ -109,3 +109,39 @@ body {
   animation: float 4s ease-in-out infinite;
 }
 
+.alert {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 150px;
+  transform: rotate(8deg);
+  transition: 0.3s ease;
+}
+.alert:hover {
+  transform: rotate(8deg) scale(1.1);
+}
+
+.map {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 150px;
+  transform: rotate(-8deg);
+  transition: 0.3s ease;
+}
+.map:hover {
+  transform: rotate(-8deg) scale(1.1);
+}
+
+.bag {
+  position: absolute;
+  top: 45%;
+  left: 16%;
+  width: 150px;
+  transition: 0.3s ease;
+ 
+}
+.bag:hover {
+  transform: scale(1.1);
+}
+
